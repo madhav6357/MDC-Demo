@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Madhav Gangadharan - Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f3f0e8;
+      color: #2e2e2e;
+      line-height: 1.8;
+    }
+
+    header {
+      background-color: #3e3e3e;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 36px;
+      font-weight: bold;
+      border-bottom: 4px solid #a1866f;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #dcd2c0;
+      border-bottom: 1px solid #c0b6a4;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      padding: 15px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      font-family: Georgia, serif;
+      color: #3e3e3e;
+      transition: background 0.2s ease-in-out;
+    }
+
+    nav button:hover {
+      background-color: #c6b8a9;
+      color: #000;
+    }
+
+    .content {
+      max-width: 960px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      display: none;
+    }
+
+    .content.active {
+      display: block;
+    }
+
+    h2 {
+      font-size: 24px;
+      color: #3e3e3e;
+      border-bottom: 1px solid #aaa;
+      margin-bottom: 20px;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #2a4d7a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #3e3e3e;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+      border-top: 4px solid #a1866f;
+    }
+
+    .home-flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .home-flex img {
+      width: 100%;
+      max-width: 280px;
+      border: 4px solid #cbb89c;
+      border-radius: 4px;
+    }
+
+    .bio {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    @media (max-width: 768px) {
+      .home-flex {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Madhav Gangadharan</header>
+
+  <nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('parents')">Parents</button>
+    <button onclick="showPage('hobbies')">Hobbies</button>
+    <button onclick="showPage('qualification')">Qualification</button>
+    <button onclick="showPage('extra')">Extra Curricular</button>
+    <button onclick="showPage('contact')">Contact Me</button>
+  </nav>
+
+  <!-- HOME -->
+  <div id="home" class="content active">
+    <h2>Welcome</h2>
+    <div class="home-flex">
+      <img src="image1.jpg" alt="Madhav Gangadharan">
+      <div class="bio">
+        <p>Hello! I'm <strong>Madhav Gangadharan</strong>, a grounded and ambitious individual with a love for learning, exploring new ideas, and building meaningful connections.</p>
+        <p>Whether it’s navigating through business studies or enjoying the little moments in nature and sports, I believe in living fully, authentically, and with purpose.</p>
+        <p>This is my personal portfolio — a space where you can get to know me better in a classic, honest style.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PARENTS -->
+  <div id="parents" class="content">
+    <h2>My Parents</h2>
+    <ul>
+      <li><strong>Father:</strong> Roopak Gangadharan – A real estate businessman with integrity and an entrepreneurial spirit.</li>
+      <li><strong>Mother:</strong> Priya Pavithran – A professor at PSG University, Coimbatore, with a passion for education and mentorship.</li>
+    </ul>
+  </div>
+
+  <!-- HOBBIES -->
+  <div id="hobbies" class="content">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Reading books on philosophy, business, and science fiction</li>
+      <li>Playing sports like football, cricket, and badminton</li>
+      <li>Listening to instrumental and classical music</li>
+      <li>Photography and storytelling through visuals</li>
+      <li>Spending time in nature and quiet reflection</li>
+    </ul>
+  </div>
+
+  <!-- QUALIFICATION -->
+  <div id="qualification" class="content">
+    <h2>Qualification</h2>
+    <ul>
+      <li><strong>SSLC:</strong> Completed with distinction</li>
+      <li><strong>SSSLC:</strong> Higher Secondary Education – Science Stream</li>
+      <li><strong>BBA:</strong> Rajagiri College of Management & Applied Sciences</li>
+    </ul>
+  </div>
+
+  <!-- EXTRA CURRICULAR -->
+  <div id="extra" class="content">
+    <h2>Extra Curricular Activities</h2>
+    <ul>
+      <li>Participated in inter-college debates and group discussions</li>
+      <li>Designed posters and media content for events</li>
+      <li>Organized community outreach programs</li>
+      <li>Member of the student entrepreneurship club</li>
+    </ul>
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contact" class="content">
+    <h2>Contact Me</h2>
+    <p>Please feel free to reach out:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:madhavgangadharan16@gmail.com">madhavgangadharan16@gmail.com</a></li>
+      <li><strong>Phone:</strong> <a href="tel:+918095599200">8095599200</a></li>
+      <li><strong>Instagram:</strong> <a href="https://www.instagram.com/madhav@1603" target="_blank">@madhav@1603</a></li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 Madhav Gangadharan • All rights reserved.
+  </footer>
+
+  <script>
+    function showPage(id) {
+      const pages = document.querySelectorAll('.content');
+      pages.forEach(page => page.classList.remove('active'));
+      const target = document.getElementById(id);
+      if (target) {
+        target.classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+</html>
